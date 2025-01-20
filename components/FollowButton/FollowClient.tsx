@@ -25,7 +25,7 @@ export default function FollowClient({ targetUserId, isFollowing }: Props) {
     });
     setIsFetching(false);
 
-    console.log(res);
+    // console.log(res);
 
     startTransition(() => {
       router.refresh();
@@ -39,7 +39,7 @@ export default function FollowClient({ targetUserId, isFollowing }: Props) {
     });
     setIsFetching(false);
 
-    console.log(res);
+    // console.log(res);
 
     startTransition(() => {
       router.refresh();
