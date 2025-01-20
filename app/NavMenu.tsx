@@ -3,9 +3,10 @@ import Image from "next/image";
 import styles from "./NavMenu.module.css";
 import { SignInButton, SignOutButton } from "@/components/buttons";
 import { getServerSession } from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 
 export default async function NavMenu() {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   return (
     <nav className={styles.nav}>
